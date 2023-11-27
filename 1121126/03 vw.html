@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size: 64px;
+        }
+
+        @media (width < 1200px){
+            h2{
+                /* font-size: 64/1200*100; */
+                font-size: 5.3vw; 
+
+                /* font-size: clamp(min最小值, 預設值, 最大值); */
+                font-size: clamp(28px, 5.3vw, 64px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kv">
+        <h2>阿哈囉哈</h2>
+    </div>
+</body>
+</html>

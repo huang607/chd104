@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      /*輸入框樣式*/
+.underLineStyle {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+/*輸入框內的圖示屬性設定*/
+.inputWithin {
+  position: relative; 
+  display: inline-block;
+}		
+.inputWithin .icon { /*左邊圖示*/
+  position: absolute; 			
+  left: 3px;
+  top: calc(50% - 0.5em);
+}
+/* .inputWithin .btn { 右邊圖示
+  position: absolute;
+  right: 3px;
+  top: calc(50% - 0.5em);
+}		 */
+
+輸入框padding設定，用以保持文字與圖示的距離。
+.inputPaddingLeft {
+  padding-left: 24px; 
+  padding-top: 10px; 		
+  padding-bottom: 10px;
+}
+.inputPaddingRight {
+  padding-right: 66px;
+}
+    </style>
+
+</head>
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+  
+  <br>
+  
+  <!--只有底線的輸入框-->
+  <!-- <div>		
+    <input type="text" class="underLineStyle" placeholder="only underline">
+  </div> -->
+  
+  <br><br>
+  
+  <!--左邊有圖示的輸入框-->
+  <div class="inputWithin">
+    <i class='fas fa-search icon'></i>
+    <input type="text" class="underLineStyle inputPaddingLeft" placeholder="left icon">
+  </div>
+  
+  <br><br><br>
+  
+  <!-- 右邊有圖示的輸入框
+  <div class="inputWithin">
+    <input type="text" class="underLineStyle inputPaddingRight" placeholder="right button">
+    <button class="btn">button</button>
+  </div>
+  
+  <br><br><br>
+  
+  左、右邊都有圖示的輸入框
+  <div class="inputWithin">
+    <i class='fas fa-search icon'></i>
+    <input type="text" class="underLineStyle inputPaddingLeft inputPaddingRight" placeholder="both left and right">
+    <button class="btn">button</button>
+  </div>
+  
+  <br><br><br>
+  
+  有標題的輸入框
+  <div>標題</div>
+  <div>		
+    <input type="text" class="underLineStyle" placeholder="with a title">		
+  </div> -->
+</body>
+</html>

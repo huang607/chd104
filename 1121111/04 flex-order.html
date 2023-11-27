@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 600px;
+            border: 2px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column; 
+
+        }
+
+        .item{
+            width: 150px;
+            height: 100px;
+            background-color: aqua;
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        /* .item:nth-child(2){
+            order: 1;
+        } */
+
+        .item:nth-child(3){
+            order: 2;
+        } 
+
+        .news{
+            width: 500px;
+            border: 1px solid blue;
+            padding: 20px;
+
+        }
+
+        .news .content{
+            display: flex;
+            flex-direction: column; 
+        }
+        
+        .news .content time{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <div class="news">
+        <img src="https://fakeimg.pl/300x200/200">
+        <div class="content">
+            <h3>title</h3>
+            <time>112.11.11</time>
+            <p>出席親愛的存儲受傷並且冠軍快車簡直就好，人物提升是一個鼓勵吃飯快速面積，看出內存依據最近身體分公司客服任何就像填寫學校一笑，普遍最快主角總是距離幾天持續聲音供應商星座做到銷售到處看出，想要這種轉身運動價格故障總算全面大人歡迎永遠獲得許可刺激，也會不可以交。</p></div>
+    </div>
+
+    
+</body>
+</html>

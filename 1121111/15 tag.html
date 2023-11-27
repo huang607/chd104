@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 2px solid blue;
+            padding: 6px;
+            width: 200px;
+            margin: 50px;
+            position: relative;
+        }
+
+        .card .label{
+            background-color: rgb(148, 129, 52);
+            padding: 5px;
+            position: absolute;
+            top: 10px;
+            left: -8px;
+            font-size: 10px;
+            color: aliceblue;
+        }
+
+        .card .label::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 7px solid rgb(80, 66, 7);
+            border-left:7px solid rgba(80, 65, 7, 0);
+            top: 100%;
+            left: 0;
+
+        }
+
+        .card img{
+            width: 100%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">店到店</div>
+        <img src="https://picsum.photos/300/200/?random=10">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consequuntur.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .main-header{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(174, 174, 174);
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo img{
+            vertical-align: bottom;
+        }
+
+        .hb{
+            background-color: blue;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hb span{
+            width: 80%;
+            height: 2px;
+            margin: 3px auto;
+            background-color: #fff;
+        }
+
+        .main-nav{
+            display: none;
+            width: 100%;
+            background-color: #d0d0d0;
+        }
+
+        #menu-switch:checked ~ .main-header .main-nav{
+            display: block;
+        }
+
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .main-nav a + a{
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- ======================================== -->
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="https://fakeimg.pl/80x40/200">
+            </a>
+        </div>
+        
+        <!-- ======================================== -->
+
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- ======================================== -->
+
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+
+    
+</body>
+</html>

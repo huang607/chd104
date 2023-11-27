@@ -1,0 +1,103 @@
+.article{
+    background-color: #ffffff;
+    padding:60px  0 60px 0;
+}
+
+.article h2{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(59, 59, 59);
+    padding: 0px 0 30px 0;
+}
+
+.article .content{
+    display: flex;
+    margin: auto;
+    width: 950px;
+
+}
+
+.article .content .colum{
+    margin: 0 15px;
+    
+}
+
+.article .content .colum .item{
+    display: flex;
+    height: 110px;
+}
+
+.article .content .colum .item .number{
+    margin: 5px 20px 0 0;
+    -webkit-text-stroke: 1px #00000073;
+    font-size: 65px;
+    color: transparent;
+}
+
+.article .content .colum .item .word{
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.article .content .colum .item:nth-child(4) .word {
+    border: none;
+}
+
+
+
+.article .content .colum .item .word .type{
+    margin: 15px 0 0 0;
+}
+
+.article .content .colum .item .word .type span{
+    font-size: 14px;
+    color: #09adbf;
+    letter-spacing: 0.5px;
+}
+
+.article .content .colum .item .word .type span:first-child::before{
+    content: "#";
+    color: #09adbf;
+    font-size: 14px;
+}
+
+.article .content .colum .item .word .type span + span::before{
+    content: "#";
+    color: #09adbf;
+    font-size: 14px;
+}
+
+.article .content .colum .item .word h4{
+    margin: 6px 0 15px 0;
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.article .content .colum .item .word h4:hover{
+    color: #09adbf;
+}
+
+
+
+
+.article .more{
+    margin: 10px 180px 0 0;
+    text-align: right;
+    position: relative;
+
+}
+
+.article .more a{
+    text-decoration: none;
+    color: #09adbf;
+}
+
+.article .more a::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 6px;
+    background-color: #09adbf;
+    clip-path: polygon(0% 0%, 30% 0%, 100% 50%,30% 100%, 0% 100%,70% 50%);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            /* width: 800px; */
+            height: 700px; 
+            display: flex;
+        }
+
+        .sidebar{
+            width: 200px;
+            background-color: blue;
+            flex-shrink: 0;
+        }
+
+        .content{
+            width: 100%;
+            flex-shrink: 1;
+            background-color: rgb(98, 98, 54);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item">
+        <div class="sidebar"></div>
+        <div class="content"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

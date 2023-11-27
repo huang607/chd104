@@ -1,0 +1,12 @@
+h1{
+    font-size: 30px;
+    color: rgb(21, 0, 255);
+}
+
+p{
+    color: brown;
+}
+
+p {
+    border-bottom: 1px solid chocolate;
+}

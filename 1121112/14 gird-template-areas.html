@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid blue;
+            display: grid;
+            grid-template-areas: 'header header header'
+	            'main main footer'
+	            'main main footer';
+        }
+
+        .item1{
+            grid-area:header;
+            background-color: brown;
+        }
+
+        .item2{
+            grid-area:main;
+            background-color: rgb(42, 165, 91);
+        }
+
+        .item3{
+            grid-area:footer;
+            background-color: rgb(165, 142, 42);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item1">h</div>
+        <div class="item2">m</div>
+        <div class="item3">f</div>
+    </div>
+</body>
+</html>

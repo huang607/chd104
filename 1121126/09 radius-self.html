@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card{
+      --radius: 15px;
+      --padding: 10px;
+      --border-width: 1px;
+      width: 220px;
+      padding: var(--padding);
+      border: var(--border-width) solid blue;
+      border-radius: var(--radius);
+    }
+
+    .pic{
+      border-radius: calc(var(--radius) - var(--padding) - var(--border-width));
+      overflow: hidden;
+    }
+
+    .pic img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="pic">
+      <img src="https://picsum.photos/300/200/?random=10">
+    </div>
+  </div>
+</body>
+</html>
